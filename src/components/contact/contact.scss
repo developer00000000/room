@@ -7,6 +7,9 @@
         padding-bottom: 30px;
         font-size: 32px;
         font-weight: 700;
+        @include for-miniphone{
+            font-size: 29px;
+        }
     }
 
 }
@@ -33,6 +36,9 @@
             color: white;
             font-size: 25px;
             padding-bottom: 20px;
+            @include for-miniphone{
+                font-size: 23px;
+            }
         }
         p{
             color: white;
@@ -42,6 +48,10 @@
             margin-bottom: 80px;
             @include for-tablet{
                 max-width: 100%;
+            }
+            @include for-miniphone{
+                font-size: 16px;
+                
             }
         }
       &_main{

@@ -3,6 +3,9 @@
     margin-top: 100px;
     margin-bottom: 40px;
     font-weight: 700;
+    @include for-miniphone{
+        font-size: 29px;
+    }
 }
 .mahsulotlar{
     display: flex;
@@ -15,6 +18,17 @@
         overflow: hidden;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        p{
+             font-weight: 400;
+            @include for-phone{
+                font-size: 17px;
+                font-weight: 400;
+            }
+            @include for-miniphone{
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
         img{
             width: 100%;
             border-radius: 20px;
