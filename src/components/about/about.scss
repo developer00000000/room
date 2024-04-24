@@ -32,6 +32,11 @@
             padding-top: 20px;
             padding-bottom: 20px;
             font-weight: 500;
+            @include for-phone{
+                font-size: 15px;
+                line-height: 22px;
+                font-weight: 400;
+            }
         }
         img{
             width: 150px;
