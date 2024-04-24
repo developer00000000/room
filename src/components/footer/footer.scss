@@ -17,6 +17,11 @@ footer{
                 width: 130px;
             }
         }
+        span{
+            @include for-phone{
+                font-size: 15px;
+            }
+        }
     }
     &_right{
         display: flex;
@@ -32,6 +37,11 @@ footer{
             li{
                 font-size: 19px;
                 line-height: 33px;
+                @include for-phone{
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
             }
             li:hover{
                 text-decoration: underline;
@@ -44,6 +54,11 @@ footer{
     font-size: 22px;
     padding-bottom: 30px;
     font-weight: 600;
+    @include for-phone{
+        font-size: 22px;
+        padding-bottom: 10px;
+        font-weight: 600;
+    }
 }
 
 .line{
