@@ -61,3 +61,14 @@
         display: none;
     }
 }
+.shourum_map{
+  @include for-phone{
+    height: 240px;
+  }
+  @include for-tablet{
+    height: 400px;
+  }
+  @include for-miniphone{
+    height: 200px;
+  }
+}

@@ -33,12 +33,12 @@
             width: 190px;
            }
            @include for-miniphone{
-            width: 160px;
+            width: 140px;
            }
             p{
                 font-size: 19px;
-                @include for-miniphone{
-                    font-size: 17px;
+                @include for-phone{
+                    font-size: 14px;
                 }
             }
             img{
@@ -81,6 +81,7 @@
     border-radius: 20px;
     overflow: hidden;
     width: 100%;
+   
 }
 
 .hero_right{
