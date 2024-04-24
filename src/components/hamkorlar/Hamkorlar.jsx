@@ -5,11 +5,13 @@ import { Autoplay } from "swiper/modules";
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { useTranslation } from 'react-i18next';
 
 const Hamkorlar = () => {
+   const {t}=useTranslation()
   return (
     <div className='hamkors'>
-       <h3 className='container'> Hamkorlar</h3>
+       <h3 className='container'> {t("partnersTitle")}</h3>
         <Swiper
         slidesPerView={3}
         spaceBetween={30}

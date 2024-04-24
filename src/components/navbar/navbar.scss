@@ -15,10 +15,13 @@ nav{
 }
 
     .img{
-       
+         width: 200px;
         @include for-phone{
            width: 150px;
         }
+    }
+    .img:hover{
+        cursor: pointer;
     }
 
 .nav{
@@ -103,7 +106,7 @@ nav{
 .show{
   display: flex !important;
   transition: 1s;
-  
+
 }
 .black{
     color: black;
@@ -138,5 +141,17 @@ nav{
     }
   }
 
-
+    .nav_right{
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 16px;
+        @include for-tablet{
+            width: 60px;
+            border: 1px solid black;
+        }
+        select{
+            appearance: none;
+        }
+    }
 

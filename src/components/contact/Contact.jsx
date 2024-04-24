@@ -5,18 +5,21 @@ import { FaInstagram } from "react-icons/fa6";
 import { PiTelegramLogo } from "react-icons/pi";
 import { SlSocialFacebook } from "react-icons/sl";
 import { FiYoutube } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 const Contact = () => {
+  const {t}=useTranslation()
   return (
     <div className='contact'>
-        <h3 className="container">Biz bilan bog'lanish</h3>
+        <h3 className="container">{t("contactTitle")}</h3>
          <div className="contact_box container">
             <div className="contact_box_left">
-                <h4>Kontakt ma'lumotlar</h4>
-                <p>Savollaringiz bormi? Biz bilan bog‘laning yoki murojaatingizni qoldiring. Menejer siz bilan bog‘lanadi!</p>
+                <h4>{t("contactTitle2")}</h4>
+                <p>{t("contactText")}</p>
                 <div className="contact_box_left_main">
-                   <span><IoLocationOutline /> O'zbekiston, Toshkent, ko'ch. Sofdil, 132</span>
-                   <span><AiOutlineMail /> info@imzo.uz</span>
-                   <span><LuPhoneCall /> +998 (71) 207-77-77</span>
+                   <span><IoLocationOutline /> {t("contactText2")}</span>
+                   <span><AiOutlineMail /> info@rama.uz</span>
+                   <span><LuPhoneCall /> +998 (71) 443-11-33</span>
+                   <span><LuPhoneCall /> +998 (90) 915-11-33</span>
                 </div>
                 <div className="contact_box_left_media">
                    <span><FaInstagram /></span>
@@ -27,38 +30,38 @@ const Contact = () => {
             </div>
             <div className="contact_box_right">
                <form action="" className="form1">
-                <input type="text" placeholder="Ism" required/>
-                <input type="text" placeholder="Familiya"/>
-                <input type="text" placeholder="Elektron pochta"/>
-                <input type="number" placeholder="Telefon raqamingiz" required/>
+                <input type="text" placeholder={t("contactPl2")} required/>
+                <input type="text" placeholder={t("contactPl3")}/>
+                <input type="text" placeholder={t("contactPl4")}/>
+                <input type="number" placeholder={t("contactPl5")} required/>
                </form>
-               <h4>Sizni nima qiziqtiradi?</h4>
+               <h4>{t("contactText3")}</h4>
                <form action="" className="form2">
                  <label htmlFor="">
                   <input type="checkbox" name="" id="" />
-                   Romlar va eshiklar
+                  {t("contactText4")}
                  </label>
                  <label htmlFor="">
                   <input type="checkbox" name="" id="" />
-                   Surilma tizimlari
+                  {t("contactText5")}
                  </label>
                  <label htmlFor="">
                   <input type="checkbox" name="" id="" />
-                   Fasad tizimlari
+                  {t("contactText6")}
                  </label>
                  <label htmlFor="">
                   <input type="checkbox" name="" id="" />
-                   Import tizimlari
+                  {t("contactText7")}
                  </label>
                </form>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Xabar">
+                <textarea name="" id="" cols="30" rows="10" placeholder={t("contactPl")}>
                 </textarea>
                 <div className="tasdiqlash">
                   <div className="tasdiqlash_main">
                     <input type="checkbox" name="" id="" />
-                     <p>"Yuborish" tugmasini bosish orqali siz shaxsiy ma'lumotlarni qayta ishlash uchun shartlarni qabul qilasiz.</p>
+                     <p>{t("contactText8")}</p>
                   </div>
-                    <button>Yuborish</button>
+                    <button>{t("contactBtn2")}</button>
                 </div>
             </div>
          </div>

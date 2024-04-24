@@ -12,6 +12,10 @@ footer{
     &_left{
         img{
             padding-bottom: 40px;
+            width: 200px;
+            @include for-phone{
+                width: 130px;
+            }
         }
     }
     &_right{
@@ -52,7 +56,8 @@ footer{
 
 .footer_side {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
     @include for-tablet{
         justify-content: center;
         flex-direction: column;

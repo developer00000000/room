@@ -1,21 +1,34 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 import './App.css';
 import './main.scss'
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 
-function App() {
+import i18n from './locale/i18next';
+// import i18n from 'i18next';
+// import { initReactI18next } from 'react-i18next';
+// import translationsRu from './locale/translateRus';
+// import translationsUz from './locale/translateUz';
 
+// i18n.use(initReactI18next).init({
+//   ru:{translation:translationsRu},
+//   uz:{translation:translationsUz},
+//   lng:'ru',
+//   fallbackLng:'ru'
+// })
+i18n()
+
+function App() {
   return (
     <>
-     <BrowserRouter>
+     {/* <BrowserRouter> */}
        <Routes>
          <Route path='/' element={<Layout/>}>
            <Route path='/' element={<Home/>}/>
          </Route>
        </Routes>
-     </BrowserRouter>
+     {/* </BrowserRouter> */}
        {/* <Navbar/>
       <Footer/> */}
     </>

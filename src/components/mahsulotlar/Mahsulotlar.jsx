@@ -11,11 +11,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/grid";
 import { Autoplay } from "swiper/modules";
+import { useTranslation } from 'react-i18next';
 
 const Mahsulotlar = () => {
+  const {t}=useTranslation()
   return (
     <div className='container mahsulot'>
-       <h3 className='mahsulotlar_title'>Mahsulotlar</h3>
+       <h3 className='mahsulotlar_title'>{t("prodTitle")}</h3>
        <Swiper
   centeredSlides={true}
   loop={true}
@@ -46,60 +48,60 @@ const Mahsulotlar = () => {
 <SwiperSlide>
         <div className="mahsulotlar_blog">
           <img src={es1} alt="ess" />
-          <p>Eshiklar</p>
+          <p>{t("prod1")}</p>
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
         <div className="mahsulotlar_blog">
           <img src={es2} alt="ess" />
-          <p>Alyumin romlar</p>
+          <p>{t("prod2")}</p>
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
         <div className="mahsulotlar_blog">
           <img src={es3} alt="ess" />
-          <p>Import tizimlari</p>
+          <p>{t("prod3")}</p>
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
         <div className="mahsulotlar_blog">
           <img src={es4} alt="ess" />
-          <p>Oynali to'siqlar</p>
+          <p>{t("prod4")}</p>
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
         <div className="mahsulotlar_blog">
           <img src={es5} alt="ess" />
-          <p>Plasrik romlar</p>
+          <p>{t("prod5")}</p>
         </div>
       </SwiperSlide>
 
       <SwiperSlide>
         <div className="mahsulotlar_blog">
           <img src={es6} alt="ess" />
-          <p>Rollet tizimlari</p>
+          <p>{t("prod6")}</p>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="mahsulotlar_blog">
           <img src={es7} alt="ess" />
-          <p>Import tizimlari</p>
+          <p>{t("prod7")}</p>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className="mahsulotlar_blog">
           <img src={es8} alt="ess" />
-          <p>Fasad tizimlari</p>
+          <p>{t("prod8")}</p>
         </div>
       </SwiperSlide>
 </Swiper>
     <div className="mahsulotlar_hammasi">
         <span></span>
-         <button className='malumotlar_btn'>Barcha mahsulotlar <GoArrowUpRight className='open'/></button>
+         <button className='malumotlar_btn'>{t("prodBtn")} <GoArrowUpRight className='open'/></button>
     </div>
     </div>
    

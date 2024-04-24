@@ -33,6 +33,9 @@
             padding-bottom: 20px;
             font-weight: 500;
         }
+        img{
+            width: 150px;
+        }
         button{
             display: flex;
             justify-content: right;
@@ -73,7 +76,9 @@
                 width: 100%;
             }
             @include for-phone{
-                height: 300px;
+                height: auto;
+                aspect-ratio: 2;
+
             }
         }
     }
@@ -98,10 +103,11 @@
         align-items: center;
         padding: 20px;
         column-gap: 10px;
+        
         @include for-tablet{
             flex-direction: column;
             align-items: baseline;
-            row-gap: 20px;
+            row-gap: 30px;
             height: 300px;
         }
         @include for-phone{
@@ -119,8 +125,18 @@
         }
         img{
             width: 100px;
+            @include for-tablet{
+                margin: 0 auto;
+                width: 140px;
+                height: 130px;
+            }
             @include for-phone{
-                width: 80px;
+                width: 130px;
+                height: 140px;
+            }
+            @include for-miniphone{
+                width: 80;
+                height: 100px;
             }
         }
     }
