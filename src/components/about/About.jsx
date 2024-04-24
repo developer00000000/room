@@ -5,7 +5,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import sv1 from '../../images/sg1.svg' ;
 import sv2 from '../../images/sg2.svg' ;
 import sv3 from '../../images/sg3.svg' ;
-import sv4 from '../../images/sg4.svg' ;
+// import sv4 from '../../images/sg4.svg' ;
 import { useTranslation } from 'react-i18next';
 
 
@@ -13,12 +13,12 @@ import { useTranslation } from 'react-i18next';
 const About = () => {
     const {t}=useTranslation()
   return (
-   <>
+   <div id="about">
       <div className="about container">
         <div className="about_left">
            <img src={logo} alt="logo" />
            <p>{t("prodText")}</p>
-            <button>{t("prodBtn")} <GoArrowUpRight className='open'/></button>
+            <a href="#contact"><button>{t("buttons")} <GoArrowUpRight className='open'/></button></a>
         </div>
         <div className="about_right">
              <img src={office} alt="" />
@@ -28,7 +28,7 @@ const About = () => {
       <div className="about_work container">
          <div className="about_work_blog">
              <div>
-             <span>1000 +</span>
+             <span>15 +</span>
             <p>{t("prodText1")}</p>
              </div>
              <img src={sv1} alt="" />
@@ -47,16 +47,16 @@ const About = () => {
              </div>
              <img src={sv3} alt="" />
          </div>
-         <div className="about_work_blog">
+         {/* <div className="about_work_blog">
              <div>
              <span>15</span>
             <p>{t("prodText4")}</p>
              </div>
              <img src={sv4} alt="" />
-         </div>
+         </div> */}
       </div>
 
-   </>
+   </div>
   )
 }
 

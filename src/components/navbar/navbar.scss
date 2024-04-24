@@ -91,6 +91,9 @@ nav{
     color: black;
     background-color: white;
     cursor: pointer;
+    a{
+        color: black;
+    }
 }
 .open{
     font-size: 30px;
@@ -153,5 +156,12 @@ nav{
         select{
             appearance: none;
         }
+    }
+    a{
+        transition: opacity 1s ease;
+        color: white
+    }
+    a:hover{
+          color: black  
     }
 

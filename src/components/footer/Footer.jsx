@@ -11,7 +11,7 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
    const {t}= useTranslation()
   return (
-    <footer>
+    <footer id="footer">
         <div className="footer container">
           <div className="footer_left">
              <img src={logo} alt="" />
@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
           </div>
           <div className="footer_right">
-             <ul>
+             {/* <ul>
                  <li className="ul_title">{t("footerTitle1")}</li>
                  <li>{t("footerLi1")}</li>
                  <li>{t("footerLi2")}</li>
@@ -49,8 +49,8 @@ const Footer = () => {
                 <li className="ul_title">{t("footerTitle4")}</li>
                 <li>{t("footerLi14")}</li>
                 <li>{t("footerLi15")}</li>
-             </ul>
-              <ul>
+             </ul> */}
+              {/* <ul>
                  <li className="ul_title">{t("footerTitle5")}</li>
                 <div className="contact_box_left_media">
                    <span><FaInstagram /></span>
@@ -58,7 +58,7 @@ const Footer = () => {
                    <span><SlSocialFacebook /></span>
                    <span><FiYoutube /></span>
                 </div>
-              </ul>
+              </ul> */}
           </div>
         </div>
         <div className="line container"></div>
@@ -67,8 +67,13 @@ const Footer = () => {
               <p>{t("footerText2")}</p>
               <p>{t("footerText3")}</p>
               <p>{t("footerText4")}</p>
+              <div className="contact_box_left_media foter">
+                   <span><FaInstagram /></span>
+                   <span><PiTelegramLogo /></span>
+                   <span><SlSocialFacebook /></span>
+                   <span><FiYoutube /></span>
+                </div>
             </div>
-          
         </div>
 
     </footer>

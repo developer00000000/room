@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 const Hamkorlar = () => {
    const {t}=useTranslation()
   return (
-    <div className='hamkors'>
+    <div id='partner' className='hamkors'>
        <h3 className='container'> {t("partnersTitle")}</h3>
         <Swiper
         slidesPerView={3}

@@ -3,7 +3,7 @@ footer{
     padding-bottom: 50px;
 }
 .footer{
-    display: flex;
+    // display: flex;
     padding-top: 35px;
     column-gap: 70px;
     @include for-tablet{
@@ -52,10 +52,10 @@ footer{
 }
 .ul_title{
     font-size: 22px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-weight: 600;
     @include for-phone{
-        font-size: 22px;
+        font-size: 19px;
         padding-bottom: 10px;
         font-weight: 600;
     }
@@ -103,4 +103,9 @@ footer{
            color: whitesmoke;
         }
     }
+}
+.foter{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }

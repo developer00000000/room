@@ -27,9 +27,9 @@ const Home = () => {
        <Hero />
        <Mahsulotlar/>
        <About/>
-       <Mijozlar/>
+       {/* <Mijozlar/> */}
        <Hamkorlar/>
-       <Shourumlar/>
+       {/* <Shourumlar/> */}
        <Contact/>
     </div>
   )

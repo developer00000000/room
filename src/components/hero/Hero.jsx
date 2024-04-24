@@ -52,7 +52,7 @@ const Hero = () => {
               <p>{t("hero6")}</p>
             </div>
           </div>
-          <button>{t("heroBtn")}<GoArrowUpRight className='open'/></button>
+          <a href="#contact"><button>{t("buttons")}<GoArrowUpRight className='open'/></button></a>
         </div>
         <div className="hero_right">
       <Swiper
@@ -70,13 +70,13 @@ const Hero = () => {
 >
   <SwiperSlide>
     <div className="slide-content">
-      <img src={img3} alt="e" />
+      <img src={img6} alt="e" />
       <h1 className="overlay-text">{t("heroTitle1")} </h1>
     </div>
   </SwiperSlide>
   <SwiperSlide>
     <div className="slide-content">
-      <img src={img6} alt="e" />
+      <img src={img1} alt="e" />
       <h3 className="overlay-text">{t("heroTitle2")}</h3>
     </div>
   </SwiperSlide>

@@ -29,11 +29,11 @@ const Navbar = () => {
        <img className='img' src={logo} alt="" />
         <ul className={`${isOpen ? 'show' : 'hide'}`}>
           <img src={logo} alt="" />
-          <Link className='navlink'>{t("menu1")}</Link>
-          <Link className='navlink'>{t("menu2")}</Link>
-          <Link className='navlink'>{t("menu3")}</Link>
-          <Link className='navlink'>{t("menu4")}</Link>
-          <Link className='navlink'>{t("menu5")}</Link>
+          <a href="#about"><li href='#about' className='navlink'>{t("menu1")}</li></a>
+          <a href="#product"><li className='navlink'>{t("menu2")}</li></a>
+          <a href="#partner"> <li className='navlink'>{t("partnersTitle")}</li></a>
+          <a href="#footer"><li className='navlink'>{t("adres")}</li></a>
+          {/* <li className='navlink'>{t("menu5")}</li> */}
           <select className='nav_right' name="" id="" onChange={changeLangHandler}>
                <option value="uz">{t("uz")}</option>
                <option value="ru">{t("ru")}</option>
@@ -49,7 +49,7 @@ const Navbar = () => {
         </ul>
        </div>
         <div >
-            <button className='mainButton'>{t("menuBtn")}<LuSeparatorHorizontal /></button>
+        <a href="#contact"><button className='mainButton'>{t("buttons")}<LuSeparatorHorizontal /></button></a>
         </div>
         <div className='burgerBtn'>
         <RxHamburgerMenu className='open' onClick={()=>setIsOpen(!isOpen)}/>

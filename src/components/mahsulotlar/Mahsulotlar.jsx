@@ -16,7 +16,7 @@ import { useTranslation } from 'react-i18next';
 const Mahsulotlar = () => {
   const {t}=useTranslation()
   return (
-    <div className='container mahsulot'>
+    <div className='container mahsulot' id="product">
        <h3 className='mahsulotlar_title'>{t("prodTitle")}</h3>
        <Swiper
   centeredSlides={true}
@@ -100,8 +100,8 @@ const Mahsulotlar = () => {
       </SwiperSlide>
 </Swiper>
     <div className="mahsulotlar_hammasi">
-        <span></span>
-         <button className='malumotlar_btn'>{t("prodBtn")} <GoArrowUpRight className='open'/></button>
+        {/* <span></span>
+         <button className='malumotlar_btn'>{t("prodBtn")} <GoArrowUpRight className='open'/></button> */}
     </div>
     </div>
    

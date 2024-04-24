@@ -36,6 +36,13 @@ body{
         @content;
     }
 }
+// a{
+//     transition: opacity 0.5s ease;
+//     color: white
+// }
+// a:hover{
+//       color: black  
+// }
 
 
 @import'./components/footer/footer.scss';

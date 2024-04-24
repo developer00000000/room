@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 const Contact = () => {
   const {t}=useTranslation()
   return (
-    <div className='contact'>
+    <div className='contact' id="contact">
         <h3 className="container">{t("contactTitle")}</h3>
          <div className="contact_box container">
             <div className="contact_box_left">
@@ -18,8 +18,8 @@ const Contact = () => {
                 <div className="contact_box_left_main">
                    <span><IoLocationOutline /> {t("contactText2")}</span>
                    <span><AiOutlineMail /> info@rama.uz</span>
-                   <span><LuPhoneCall /> +998 (71) 443-11-33</span>
-                   <span><LuPhoneCall /> +998 (90) 915-11-33</span>
+                   <a href="tel: +998714431133"><span><LuPhoneCall /> +998 (71) 443-11-33</span></a>
+                   <a href="tel: +998909151133"><span><LuPhoneCall /> +998 (90) 915-11-33</span></a>
                 </div>
                 <div className="contact_box_left_media">
                    <span><FaInstagram /></span>
@@ -31,12 +31,12 @@ const Contact = () => {
             <div className="contact_box_right">
                <form action="" className="form1">
                 <input type="text" placeholder={t("contactPl2")} required/>
-                <input type="text" placeholder={t("contactPl3")}/>
-                <input type="text" placeholder={t("contactPl4")}/>
+                {/* <input type="text" placeholder={t("contactPl3")}/>
+                <input type="text" placeholder={t("contactPl4")}/> */}
                 <input type="number" placeholder={t("contactPl5")} required/>
                </form>
-               <h4>{t("contactText3")}</h4>
-               <form action="" className="form2">
+               {/* <h4>{t("contactText3")}</h4> */}
+               {/* <form action="" className="form2">
                  <label htmlFor="">
                   <input type="checkbox" name="" id="" />
                   {t("contactText4")}
@@ -53,14 +53,14 @@ const Contact = () => {
                   <input type="checkbox" name="" id="" />
                   {t("contactText7")}
                  </label>
-               </form>
-                <textarea name="" id="" cols="30" rows="10" placeholder={t("contactPl")}>
-                </textarea>
+               </form> */}
+                {/* <textarea name="" id="" cols="30" rows="10" placeholder={t("contactPl")}>
+                </textarea> */}
                 <div className="tasdiqlash">
-                  <div className="tasdiqlash_main">
+                  {/* <div className="tasdiqlash_main">
                     <input type="checkbox" name="" id="" />
                      <p>{t("contactText8")}</p>
-                  </div>
+                  </div> */}
                     <button>{t("contactBtn2")}</button>
                 </div>
             </div>
