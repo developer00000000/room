@@ -12,6 +12,12 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
+    @include for-phone{
+        padding: 10px 0px;
+    }
+    @include for-miniphone{
+        padding: 8px 0px;
+    }
 }
 
     .img{

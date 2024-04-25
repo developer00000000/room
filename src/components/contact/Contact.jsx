@@ -16,13 +16,13 @@ const Contact = () => {
                 <h4>{t("contactTitle2")}</h4>
                 <p>{t("contactText")}</p>
                 <div className="contact_box_left_main">
-                   <span><IoLocationOutline /> {t("contactText2")}</span>
-                   <span><AiOutlineMail /> info@rama.uz</span>
-                   <a href="tel: +998714431133"><span><LuPhoneCall /> +998 (71) 443-11-33</span></a>
-                   <a href="tel: +998909151133"><span><LuPhoneCall /> +998 (90) 915-11-33</span></a>
+                   <span><IoLocationOutline className="contact_icons"/> {t("contactText2")}</span>
+                   <span><AiOutlineMail className="contact_icons"/> info@rama.uz</span>
+                   <a href="tel: +998714431133"><span><LuPhoneCall className="contact_icons"/> +998 (71) 443-11-33</span></a>
+                   <a href="tel: +998909151133"><span><LuPhoneCall className="contact_icons"/> +998 (90) 915-11-33</span></a>
                 </div>
                 <div className="contact_box_left_media">
-                   <span><FaInstagram /></span>
+                   <a href="https://www.instagram.com/rama_.uz?igsh=MWxhdTQzMThucGNnMw=="> <span><FaInstagram /></span></a>
                    <span><PiTelegramLogo /></span>
                    <span><SlSocialFacebook /></span>
                    <span><FiYoutube /></span>

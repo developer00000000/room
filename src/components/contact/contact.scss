@@ -62,6 +62,7 @@
         span{
             color:white;
             display: flex;
+            // align-items: center;
             column-gap: 10px;
             font-size: 18px;
             line-height: 22px;
@@ -218,7 +219,12 @@
 
 }
    }
-
+.contact_icons{
+    font-size: 22px;
+    @include for-miniphone{
+        font-size: 24px;
+    }
+}
 
 
   

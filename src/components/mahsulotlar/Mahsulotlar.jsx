@@ -1,12 +1,12 @@
 import es1 from '../../images/es1.jpg';
 import es2 from '../../images/es2.jpg';
 import es3 from '../../images/es3.jpg';
-import es4 from '../../images/es4.jpg';
-import es5 from '../../images/es5.jpg';
+import es4 from '../../images/es4.webp';
+import es5 from '../../images/es5.webp';
 import es6 from '../../images/es6.jpg';
 import es7 from '../../images/es7.jpg';
 import es8 from '../../images/es8.jpg';
-import { GoArrowUpRight } from "react-icons/go";
+// import { GoArrowUpRight } from "react-icons/go";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/grid";
@@ -29,7 +29,7 @@ const Mahsulotlar = () => {
   className="mahsulotlar container"
   breakpoints={{
     350: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 20,
       loop: true,
     },
@@ -39,7 +39,7 @@ const Mahsulotlar = () => {
       loop: true,
     },
     1024: {
-      slidesPerView: 6,
+      slidesPerView: 5,
       spaceBetween: 25,
       loop: true,
     },

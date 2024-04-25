@@ -16,10 +16,10 @@ const Footer = () => {
           <div className="footer_left">
              <img src={logo} alt="" />
              <div className="contact_box_left_main">
-                   <span><IoLocationOutline />  {t("footerText")}</span>
-                   <span><AiOutlineMail /> info@rama.uz</span>
-                   <span><LuPhoneCall /> +998 (71) 443-11-33</span>
-                   <span><LuPhoneCall /> +998 (90) 915-11-33</span>
+                   <span><IoLocationOutline className="contact_icons"/>  {t("footerText")}</span>
+                   <span><AiOutlineMail  className="contact_icons"/> info@rama.uz</span>
+                   <span><LuPhoneCall className="contact_icons"/> +998 (71) 443-11-33</span>
+                   <span><LuPhoneCall className="contact_icons"/> +998 (90) 915-11-33</span>
                 </div>
           </div>
           <div className="footer_right">
@@ -68,7 +68,7 @@ const Footer = () => {
               <p>{t("footerText3")}</p>
               <p>{t("footerText4")}</p>
               <div className="contact_box_left_media foter">
-                   <span><FaInstagram /></span>
+                   <a href="https://www.instagram.com/rama_.uz?igsh=MWxhdTQzMThucGNnMw=="><span><FaInstagram /></span></a>
                    <span><PiTelegramLogo /></span>
                    <span><SlSocialFacebook /></span>
                    <span><FiYoutube /></span>
