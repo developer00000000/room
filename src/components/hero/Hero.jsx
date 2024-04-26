@@ -4,6 +4,7 @@ import img3 from '../../images/img3.jpg';
 import img4 from '../../images/img4.jpg';
 import img5 from '../../images/img5.jpg';
 import img6 from '../../images/img6.jpg';
+import heroImg from '../../images/heroImg.jpg'
 import { GoArrowUpRight } from "react-icons/go";
 import { useRef} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -35,20 +36,20 @@ const Hero = () => {
             <div className='blog_img'><img src={img2} alt="m1" /></div>
               <p>{t("hero2")}</p>
             </div>
-            <div className="hero_left_box_blog">
-            <div className='blog_img'><img src={img3} alt="m1" /></div>
+            {/* <div className="hero_left_box_blog">
+            <div className='blog_img'><img src={img5} alt="m1" /></div>
               <p>{t("hero3")}</p>
             </div>
             <div className="hero_left_box_blog">
             <div className='blog_img'><img src={img4} alt="m1" /></div>
               <p>{t("hero4")}</p>
-            </div>
+            </div> */}
             <div className="hero_left_box_blog">
-            <div className='blog_img'><img src={img5} alt="m1" /></div>
+            <div className='blog_img'><img src={img3} alt="m1" /></div>
               <p>{t("hero5")}</p>
             </div>
             <div className="hero_left_box_blog">
-            <div className='blog_img'><img src={img6} alt="m1" /></div>
+            <div className='blog_img'><img src={img4} alt="m1" /></div>
               <p>{t("hero6")}</p>
             </div>
           </div>
@@ -70,16 +71,16 @@ const Hero = () => {
 >
   <SwiperSlide>
     <div className="slide-content">
-      <img src={img6} alt="e" />
-      <h1 className="overlay-text">{t("heroTitle1")} </h1>
+      <img src={heroImg} alt="e" />
+      {/* <h1 className="overlay-text">{t("heroTitle1")} </h1> */}
     </div>
   </SwiperSlide>
-  <SwiperSlide>
+  {/* <SwiperSlide>
     <div className="slide-content">
       <img src={img1} alt="e" />
       <h3 className="overlay-text">{t("heroTitle2")}</h3>
     </div>
-  </SwiperSlide>
+  </SwiperSlide> */}
   <div className="swiper-pagination" style={{ display: 'none' }}></div>
   <div className="autoplay-progress" slot="container-end">
     <span ref={progressContent} style={{ display: 'none' }}></span>
