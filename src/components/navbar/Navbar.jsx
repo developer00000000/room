@@ -29,10 +29,10 @@ const Navbar = () => {
        <img className='img' src={logo} alt="" />
         <ul className={`${isOpen ? 'show' : 'hide'}`}>
           <img src={logo} alt="" />
-          <a href="#about"><li href='#about' className='navlink'>{t("menu1")}</li></a>
-          <a href="#product"><li className='navlink'>{t("menu2")}</li></a>
-          <a href="#partner"> <li className='navlink'>{t("partnersTitle")}</li></a>
-          <a href="#footer"><li className='navlink'>{t("adres")}</li></a>
+          <a onClick={()=>setIsOpen(!isOpen)} href="#about"><li href='#about' className='navlink'>{t("menu1")}</li></a>
+          <a onClick={()=>setIsOpen(!isOpen)} href="#product"><li className='navlink'>{t("menu2")}</li></a>
+          <a onClick={()=>setIsOpen(!isOpen)} href="#partner"> <li className='navlink'>{t("partnersTitle")}</li></a>
+          <a onClick={()=>setIsOpen(!isOpen)} href="#footer"><li className='navlink'>{t("adres")}</li></a>
           {/* <li className='navlink'>{t("menu5")}</li> */}
           <select className='nav_right' name="" id="" onChange={changeLangHandler}>
                <option value="uz">{t("uz")}</option>
