@@ -29,40 +29,18 @@ const Contact = () => {
                 </div>
             </div>
             <div className="contact_box_right">
-               <form action="" className="form1">
-                <input type="text" placeholder={t("contactPl2")} required/>
-                {/* <input type="text" placeholder={t("contactPl3")}/>
-                <input type="text" placeholder={t("contactPl4")}/> */}
-                <input type="number" placeholder={t("contactPl5")} required/>
-               </form>
-               {/* <h4>{t("contactText3")}</h4> */}
-               {/* <form action="" className="form2">
-                 <label htmlFor="">
-                  <input type="checkbox" name="" id="" />
-                  {t("contactText4")}
-                 </label>
-                 <label htmlFor="">
-                  <input type="checkbox" name="" id="" />
-                  {t("contactText5")}
-                 </label>
-                 <label htmlFor="">
-                  <input type="checkbox" name="" id="" />
-                  {t("contactText6")}
-                 </label>
-                 <label htmlFor="">
-                  <input type="checkbox" name="" id="" />
-                  {t("contactText7")}
-                 </label>
-               </form> */}
-                {/* <textarea name="" id="" cols="30" rows="10" placeholder={t("contactPl")}>
-                </textarea> */}
+               <form className="form1" action="https://formspree.io/f/xqkrwrog" method="POST">
+                <input name="Name" type="text" placeholder={t("contactPl2")} required/>
+                <input name="Number" type="number" placeholder={t("contactPl5")} required/>
                 <div className="tasdiqlash">
-                  {/* <div className="tasdiqlash_main">
-                    <input type="checkbox" name="" id="" />
-                     <p>{t("contactText8")}</p>
-                  </div> */}
+                
+                <button type="submit">{t("contactBtn2")}</button>
+            </div>
+               </form>
+                {/* <div className="tasdiqlash">
+                
                     <button>{t("contactBtn2")}</button>
-                </div>
+                </div> */}
             </div>
          </div>
     </div>
